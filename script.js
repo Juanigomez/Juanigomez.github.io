@@ -1,4 +1,4 @@
-// FusionLabs | JavaScript - CHURRO'S EXPRESS 
+// FusionLabs - juanigomez | JavaScript - CHURRO'S EXPRESS 
 
 // Navigation Bar:
 
