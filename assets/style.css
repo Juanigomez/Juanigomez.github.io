@@ -31,6 +31,7 @@ a{
 }
 section{
     height: 100vh;
+    width: 100vw;
     padding-top: 15vh;
 }
 
@@ -243,6 +244,7 @@ nav .menu a:hover::after {
 #hero .text{
     flex-direction: column;
     align-items: left;
+    justify-content: space-evenly;
     padding-bottom: 12vh;
 }
 #hero .image{
@@ -394,6 +396,62 @@ nav .menu a:hover::after {
     font-size: 4vw;
 }
 
+/* ROADMAP */
+
+#roadmap{
+    display: flex;
+    flex-direction: column;
+}
+#roadmap .timeline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh auto;
+}
+#roadmap .timeline .line{
+    height: 2px;
+    width: 70vw;
+    background-color: var(--light);
+}
+#roadmap .timeline .numbers{
+    display: flex;
+    justify-content: space-between;
+    width: 70.5vw;
+    margin-top: -2vh;
+}
+#roadmap .timeline .numbers .num{
+    display: flex;
+    background-color: var(--light);
+    border-radius: 50%;
+    padding: 0 12px;
+    font-size: 20px;
+}
+#roadmap .all-steps{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#roadmap .all-steps .step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+
+    width: 15vw;
+    height: 45vh;
+    padding: 4vh 2vw;
+    
+    border-radius: 4px;
+    border-style: solid;
+    background-color: var(--dark);
+    color: var(--light);
+}
+#roadmap .all-steps .step i{
+    font-size: 5vw;
+}
+
 
 /* CONTACT US */
 
@@ -415,7 +473,6 @@ nav .menu a:hover::after {
     color: var(--light);
     border: solid var(--light);
     border-radius: 4px; 
-    padding: 3.5vh 2vw;
 }
 #contact-us .form .top input[type="text"],
 #contact-us .form input[type="email"],
@@ -457,6 +514,7 @@ nav .menu a:hover::after {
 #contact-us .form .contact-buttons .btn2:hover{
     background-color: transparent;
 }
+
 
 
   
@@ -704,13 +762,10 @@ nav .menu a:hover::after {
 
     /* Landing Pages | Responsive - features */
 
-    #landing-pages .features .top, #landing-pages .features .bottom{
-        flex-direction: column;
-    }
     #landing-pages .features .feature{
         height: 32vh;
-        width: 80vw;
-        margin: 2vh auto;
+        width: 40vw;
+        margin: 1vh 1vw;
         padding: 1vh 2vw;
         text-align: center;
     }
@@ -721,7 +776,7 @@ nav .menu a:hover::after {
     /* Landing Pages | Responsive - icon */
 
     #landing-pages .features .feature i{
-        font-size: 12vw;
+        font-size: 10vw;
     }
 
     /* Landing Pages | Responsive - button */
@@ -732,5 +787,66 @@ nav .menu a:hover::after {
         color: var(--dark);
         background-color: var(--light);
     }
+
+
+    /* CONTACT US */
+
+    #contact-us {
+        height: 100vh;
+    }
+    #contact-us .form {
+        height: 70vh;
+        width: 80vw;
+        border-style: none;
+        margin: 0 auto;
+        padding: 2vh 2vw;
+    }
+    #contact-us .form .top input[type="text"],
+    #contact-us .form input[type="email"],
+    #contact-us .form textarea {
+        color: var(--light);
+        background-color: transparent;
+        border: solid var(--light);
+        border-radius: 2px;
+        font-family: 'Poppins', sans-serif;
+        padding: 2vh 1vw;
+        margin: 1vh 0.5vw;
+    }
+    
+    #contact-us .form .top {
+        display: flex;
+        flex-direction: column;
+        width: 75vw;
+    }
+    #contact-us .form .top input[type="text"]{
+        width: 75vw;
+    }
+    #contact-us .form input[type="email"]{
+        width: 75vw;
+    }
+    #contact-us .form textarea {
+        resize: none; 
+        width: 75vw;
+        height: 20vh;
+        margin-bottom: -2.5vh;
+    }
+    #contact-us .form .contact-buttons{
+        display: flex;
+        margin-left: 0.5vw;
+    }
+    #contact-us .form .contact-buttons .btn1{
+        font-family: 'Poppins', sans-serif;
+    }
+    #contact-us .form .contact-buttons .btn2{
+        width: 6vw;
+        margin-left: 1vw;
+    }
+    #contact-us .form .contact-buttons .btn2 img{
+        width: 3vw;
+    }
+    #contact-us .form .contact-buttons .btn2:hover{
+        background-color: transparent;
+    }
+
 
 }
