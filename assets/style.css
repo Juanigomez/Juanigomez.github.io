@@ -472,63 +472,6 @@ nav .menu a:hover::after {
 
 @media only screen and (max-width: 900px) {
 
-    /* GENERAL SETTINGS | RESPONSIVE */
-
-    body{
-        overflow-x: hidden;
-    }
-
-    /* Text Styles | Responsive */
-
-    h1{
-        font-size: 35px;
-    }
-    p{
-        font-size: 12px;
-        font-weight: 100;
-    }
-
-    /* BUTTONS STYLINGS | RESPONSIVE */
-
-    .btn{
-        width: 30vw;
-        height: 8vh;
-    }
-    .btn1{
-        width: 25vw;
-    }
-    .btn2{
-        width: 25vw;
-    }
-
-    /* TITLE STYLE | RESPONSIVE */
-
-    .title{
-        margin-bottom: 0;
-    }
-    .title h2{
-        font-size: 35px;
-    }
-    .title h3{
-        font-size: 35px;
-        transform: translate(0, -6vh);
-    }
-
-    /* SUBTITLE STYLE | RESPONSIVE */
-
-    .subtitle{
-        text-align: center;
-        margin-bottom: 0vh;
-    }
-    .subtitle h2{
-        font-size: 32px;
-    }
-    .subtitle h3{
-        font-size: 32px;
-        transform: translate(0, -6vh);
-    }
-
-
     /* NAVIGATION BAR | RESPONSIVE */
 
     /* Navigation Bar | Responsive - burger */
@@ -608,6 +551,65 @@ nav .menu a:hover::after {
         display: none;
     }
 
+}
+
+@media only screen and (max-width: 685px) {
+
+    /* GENERAL SETTINGS | RESPONSIVE */
+
+    body{
+        overflow-x: hidden;
+    }
+
+    /* Text Styles | Responsive */
+
+    h1{
+        font-size: 35px;
+    }
+    p{
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+    /* BUTTONS STYLINGS | RESPONSIVE */
+
+    .btn{
+        width: 30vw;
+        height: 8vh;
+    }
+    .btn1{
+        width: 25vw;
+    }
+    .btn2{
+        width: 25vw;
+    }
+
+    /* TITLE STYLE | RESPONSIVE */
+
+    .title{
+        margin-bottom: 0;
+    }
+    .title h2{
+        font-size: 35px;
+    }
+    .title h3{
+        font-size: 35px;
+        transform: translate(0, -6vh);
+    }
+
+    /* SUBTITLE STYLE | RESPONSIVE */
+
+    .subtitle{
+        text-align: center;
+        margin-bottom: 0vh;
+    }
+    .subtitle h2{
+        font-size: 32px;
+    }
+    .subtitle h3{
+        font-size: 32px;
+        transform: translate(0, -6vh);
+    }
 
     /* HERO SECTION | RESPONSIVE */
 
@@ -640,7 +642,7 @@ nav .menu a:hover::after {
     /* SERVICES */
 
     #services{
-        height: 350vh;
+        height: auto;
         margin-bottom: 0;
     }
 
@@ -685,9 +687,9 @@ nav .menu a:hover::after {
 
     #landing-pages{
         flex-direction: column;
-        height: 100vh;
+        height: auto;
         padding: 0 8vw;
-        margin-top: 0;
+        margin-top: 110vh;
     }
     #landing-pages .text, #landing-pages .features{
         width: 80vw;
@@ -731,5 +733,4 @@ nav .menu a:hover::after {
         background-color: var(--light);
     }
 
-
-  }
+}
