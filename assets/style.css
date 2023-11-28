@@ -15,8 +15,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+  
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
 body{
     overflow-x: hidden;
+    max-width: 100%;
     font-family: "Poppins", sans-serif;
     background-color: var(--dark);
 }
@@ -33,6 +39,7 @@ section{
     height: 100vh;
     width: 100vw;
     padding-top: 15vh;
+    position: relative;
 }
 
 /* Text Styles */
@@ -237,8 +244,8 @@ nav .menu a:hover::after {
 }
 #hero .text, .image{
     display: flex;
-    justify-content: center;
-    width: 50vw;
+    justify-content: space-evenly;
+    max-width: 50vw;
     padding: 2vh 6vw;
 }
 #hero .text{
@@ -251,7 +258,7 @@ nav .menu a:hover::after {
     align-items: center;
 }
 #hero .image img{
-    width: 80vw
+    width: 85vw;
 }
 
 /* Hero Section - buttons */
@@ -280,8 +287,7 @@ nav .menu a:hover::after {
     align-items: center;
     justify-content: space-around;
 
-    padding: 0 4vw;
-    margin: 0 2vw;
+    padding: 0 6vw;
     margin-bottom: 12.5vh;
 }
 
@@ -302,7 +308,7 @@ nav .menu a:hover::after {
     justify-content: space-evenly;
     
     height: 60vh;
-    width: 25vw;
+    width: auto;
     margin: 0 1vw;
     padding: 1vh 1vw;
 
@@ -468,10 +474,9 @@ nav .menu a:hover::after {
     align-items: center;
     justify-content: center;
     height: 60vh;
-    width: 80vw;
+    width: 85vw;
     margin: 0 auto;
     color: var(--light);
-    border: solid var(--light);
     border-radius: 4px; 
 }
 #contact-us .form .top input[type="text"],
@@ -486,14 +491,14 @@ nav .menu a:hover::after {
     margin: 1vh 0.5vw;
 }
 #contact-us .form .top input[type="text"]{
-    width: 24.1vw;
+    width: 27.45vw;
 }
 #contact-us .form input[type="email"]{
-    width: 75vw;
+    width: 85vw;
 }
 #contact-us .form textarea {
     resize: none; 
-    width: 75vw;
+    width: 85vw;
     height: 20vh;
     margin-bottom: -2.5vh;
 }
