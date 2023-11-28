@@ -239,12 +239,12 @@ nav .menu a:hover::after {
 #hero .text, .image{
     display: flex;
     justify-content: space-evenly;
-    width: 40vw;
+    width: 50vw;
     padding: 2vh 6vw;
 }
 #hero .text{
     flex-direction: column;
-    align-items: left;
+    text-align: left;
     justify-content: space-evenly;
     padding-bottom: 12vh;
 }
@@ -252,7 +252,8 @@ nav .menu a:hover::after {
     align-items: center;
 }
 #hero .image img{
-    width: 80vw
+    width: 40vw;
+    margin: 0 auto;
 }
 
 /* Hero Section - buttons */
@@ -620,9 +621,6 @@ nav .menu a:hover::after {
 
     body{
         overflow-x: hidden;
-        position: absolute;
-        max-width: 100vw;
-        width: 100%;
     }
     section{
         width: 95vw;
@@ -685,14 +683,14 @@ nav .menu a:hover::after {
         align-items: center;
     }
     #hero .text, .image{
-        padding: 1vh 8vw;
-        width: 100vw;
+        width: 100%;
     }
     #hero .text{
-        padding-bottom: 0vh;
+        padding: 1vh 8vw;
+        padding-bottom: 7.5vh;
     }
     #hero .image img{
-        width: 160vw
+        width: 80vw;
     }
     
     /* Hero Section | Responsive - buttons */
