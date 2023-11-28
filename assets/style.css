@@ -344,6 +344,9 @@ nav .menu a:hover::after {
 #landing-pages .text, #landing-pages .features{
     width: 50vw;
 }
+
+/* Landing Pages - text */
+
 #landing-pages .text{
     color: var(--light);
     margin-top: -5vh;
@@ -351,6 +354,9 @@ nav .menu a:hover::after {
     flex-direction: column;
     justify-content: center;
 }
+
+/* Landing Pages - features */
+
 #landing-pages .features{
     display: flex;
     flex-direction: column;
@@ -381,6 +387,9 @@ nav .menu a:hover::after {
     color: var(--dark);
     transform: translateY(-2vh);
 }
+
+/* Landing Pages - icon */
+
 #landing-pages .features .feature i{
     font-size: 4vw;
 }
@@ -498,10 +507,10 @@ nav .menu a:hover::after {
         margin-bottom: 0;
     }
     .title h2{
-        font-size: 32px;
+        font-size: 35px;
     }
     .title h3{
-        font-size: 32px;
+        font-size: 35px;
         transform: translate(0, -6vh);
     }
 
@@ -509,13 +518,13 @@ nav .menu a:hover::after {
 
     .subtitle{
         text-align: center;
-        margin-bottom: -7.5vh;
+        margin-bottom: 0vh;
     }
     .subtitle h2{
-        font-size: 30px;
+        font-size: 32px;
     }
     .subtitle h3{
-        font-size: 30px;
+        font-size: 32px;
         transform: translate(0, -6vh);
     }
 
@@ -632,6 +641,7 @@ nav .menu a:hover::after {
 
     #services{
         height: 350vh;
+        margin-bottom: 0;
     }
 
     /* Services - text */
@@ -668,6 +678,57 @@ nav .menu a:hover::after {
 
     #services .all-services .service i{
         font-size: 12vw;
+    }
+
+
+    /* LANDING PAGES | RESPONSIVE */
+
+    #landing-pages{
+        flex-direction: column;
+        height: 100vh;
+        padding: 0 8vw;
+        margin-top: 0;
+    }
+    #landing-pages .text, #landing-pages .features{
+        width: 80vw;
+        padding: 0 auto;
+    }
+
+    /* Landing Pages | Responsive - text */
+
+    #landing-pages .text{
+        margin-top: -90vh;
+    }
+
+    /* Landing Pages | Responsive - features */
+
+    #landing-pages .features .top, #landing-pages .features .bottom{
+        flex-direction: column;
+    }
+    #landing-pages .features .feature{
+        height: 32vh;
+        width: 80vw;
+        margin: 2vh auto;
+        padding: 1vh 2vw;
+        text-align: center;
+    }
+    #landing-pages .features .feature:hover{
+        transform: translateY(0);
+    }
+
+    /* Landing Pages | Responsive - icon */
+
+    #landing-pages .features .feature i{
+        font-size: 12vw;
+    }
+
+    /* Landing Pages | Responsive - button */
+
+    #landing-pages .btn2{
+        width: 80vw;
+        margin: 2vh auto;
+        color: var(--dark);
+        background-color: var(--light);
     }
 
 
