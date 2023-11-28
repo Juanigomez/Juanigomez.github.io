@@ -465,6 +465,10 @@ nav .menu a:hover::after {
 
     /* GENERAL SETTINGS | RESPONSIVE */
 
+    body{
+        overflow-x: hidden;
+    }
+
     /* Text Styles | Responsive */
 
     h1{
@@ -607,10 +611,10 @@ nav .menu a:hover::after {
         width: 100vw;
     }
     #hero .text{
-        padding-bottom: 1vh;
+        padding-bottom: 0vh;
     }
     #hero .image img{
-        width: 150vw
+        width: 160vw
     }
     
     /* Hero Section - buttons */
