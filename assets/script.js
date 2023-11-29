@@ -12,3 +12,5 @@ navBar.onclick = function(){
     navBar.classList.toggle("active");
     burger.classList.toggle("active");
 }
+
+
