@@ -29,6 +29,10 @@ img{
 a{
     text-decoration: none;
 }
+
+main{
+    width: 100vw;
+}
 section{
     height: 100vh;
     width: 100vw;
@@ -398,12 +402,16 @@ nav .menu a:hover::after {
     font-size: 4vw;
 }
 
+
 /* ROADMAP */
 
 #roadmap{
     display: flex;
     flex-direction: column;
 }
+
+/* Roadmap - timeline */
+
 #roadmap .timeline{
     display: flex;
     flex-direction: column;
@@ -424,11 +432,17 @@ nav .menu a:hover::after {
 }
 #roadmap .timeline .numbers .num{
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--light);
     border-radius: 50%;
-    padding: 0 12px;
+    width: 30px;
+    height: 30px;
     font-size: 20px;
 }
+
+/* Roadmap - steps */
+
 #roadmap .all-steps{
     display: flex;
     align-items: center;
@@ -464,6 +478,9 @@ nav .menu a:hover::after {
     justify-content: center;
     height: 100vh;
 }
+
+/* Contact Us - Form */
+
 #contact-us .form {
     display: flex;
     flex-direction: column;
@@ -498,6 +515,9 @@ nav .menu a:hover::after {
     height: 20vh;
     margin-bottom: -2.5vh;
 }
+
+/* Contact Us - Buttons */
+
 #contact-us .form .contact-buttons{
     display: flex;
     margin-left: 0.5vw;
@@ -755,7 +775,8 @@ nav .menu a:hover::after {
     #landing-pages{
         flex-direction: column;
         height: auto;
-        padding: 0 8vw;
+        padding: 0 auto;
+        padding-left: 10vw;
         margin-top: 110vh;
     }
     #landing-pages .text, #landing-pages .features{
@@ -798,6 +819,55 @@ nav .menu a:hover::after {
     }
 
 
+    /* ROADMAP */
+
+    #roadmap{
+        display: flex;
+        flex-direction: column;
+        padding: 0 8vw;
+        padding-top: 15vh;
+    }   
+    #roadmap .steps{
+        display: flex;
+    }
+
+    /* Roadmap - timeline */
+
+    #roadmap .timeline{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        margin: 2vh auto;
+    }
+    #roadmap .timeline .line{
+        height: 60vh;
+        width: 2px;
+    }
+    #roadmap .timeline .numbers{
+        flex-direction: column;
+        width: 30px;
+        height: 65vh;
+        transform: translateX(-15px);
+    }
+
+    /* Roadmap - steps */
+
+    #roadmap .all-steps{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #roadmap .all-steps .step{
+        width: 60vw;
+        height: 20vh;
+        padding: 2vh 3vw;
+        border-style: none;
+    }
+    #roadmap .all-steps .step i{
+        display: none;
+    }
+
+
     /* CONTACT US */
 
     #contact-us {
@@ -806,6 +876,9 @@ nav .menu a:hover::after {
     #contact-us .title{
         margin-bottom: 5vh;
     }
+
+    /* Contact Us | Responsive - form */
+    
     #contact-us .form {
         height: 70vh;
         width: 80vw;
@@ -813,6 +886,9 @@ nav .menu a:hover::after {
         margin: 0 auto;
         padding: 2vh 2vw;
     }
+    
+    /* Contact Us | Responsive - inputs */
+
     #contact-us .form .top input[type="text"],
     #contact-us .form input[type="email"],
     #contact-us .form textarea {
@@ -821,10 +897,9 @@ nav .menu a:hover::after {
         border: solid var(--light);
         border-radius: 2px;
         font-family: 'Poppins', sans-serif;
-        padding: 2vh 1vw;
+        padding: 2vh 5vw;
         margin: 1vh 0.5vw;
     }
-    
     #contact-us .form .top {
         display: flex;
         flex-direction: column;
@@ -842,12 +917,19 @@ nav .menu a:hover::after {
         height: 20vh;
         margin-bottom: -2.5vh;
     }
+
+    /* Contact Us | Responsive - form */
+
     #contact-us .form .contact-buttons{
         flex-direction: column;
         margin-left: 0.5vw;
     }
     #contact-us .form .contact-buttons .btn1{
         width: 80vw;
+    }
+    #contact-us .form .contact-buttons .btn1:hover{
+        color: var(--dark);
+        background-color: var(--light);
     }
     #contact-us .form .contact-buttons .btn2{
         width: 80vw;
