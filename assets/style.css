@@ -735,7 +735,7 @@ nav .menu a:hover::after {
 
     #services .all-services{
         flex-direction: column;
-        height: 180vh;
+        height: auto;
         padding: 0 5vw;
     }
     #services .all-services .service{    
@@ -777,7 +777,7 @@ nav .menu a:hover::after {
         height: auto;
         padding: 0 auto;
         padding-left: 10vw;
-        margin-top: 110vh;
+        margin-top: 100vh;
     }
     #landing-pages .text, #landing-pages .features{
         width: 80vw;
@@ -871,7 +871,8 @@ nav .menu a:hover::after {
     /* CONTACT US */
 
     #contact-us {
-        height: 100vh;
+        height: auto;
+        margin-top: 40vh;
     }
     #contact-us .title{
         margin-bottom: 5vh;
