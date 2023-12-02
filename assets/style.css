@@ -535,9 +535,6 @@ nav .menu a:hover::after {
 
     /* Navigation Bar | Responsive - burger */
 
-    nav{
-        width: 95.5vw;
-    }
     nav .burger {
       display: block;
       cursor: pointer;
@@ -806,6 +803,9 @@ nav .menu a:hover::after {
     #contact-us {
         height: 100vh;
     }
+    #contact-us .title{
+        margin-bottom: 5vh;
+    }
     #contact-us .form {
         height: 70vh;
         width: 80vw;
@@ -828,33 +828,33 @@ nav .menu a:hover::after {
     #contact-us .form .top {
         display: flex;
         flex-direction: column;
-        width: 75vw;
+        width: 80vw;
     }
     #contact-us .form .top input[type="text"]{
-        width: 75vw;
+        width: 80vw;
     }
     #contact-us .form input[type="email"]{
-        width: 75vw;
+        width: 80vw;
     }
     #contact-us .form textarea {
         resize: none; 
-        width: 75vw;
+        width: 80vw;
         height: 20vh;
         margin-bottom: -2.5vh;
     }
     #contact-us .form .contact-buttons{
-        display: flex;
+        flex-direction: column;
         margin-left: 0.5vw;
     }
     #contact-us .form .contact-buttons .btn1{
-        font-family: 'Poppins', sans-serif;
+        width: 80vw;
     }
     #contact-us .form .contact-buttons .btn2{
-        width: 6vw;
-        margin-left: 1vw;
+        width: 80vw;
+        margin-left: 0;
     }
     #contact-us .form .contact-buttons .btn2 img{
-        width: 3vw;
+        width: 8vw;
     }
     #contact-us .form .contact-buttons .btn2:hover{
         background-color: transparent;
