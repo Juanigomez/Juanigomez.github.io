@@ -40,6 +40,19 @@ section{
     position: relative;
 }
 
+/* On Scroll effect */
+
+.reveal{
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
 /* Text Styles */
 
 h1{
@@ -56,6 +69,7 @@ p{
     --blue: #39c4e7;
     --green: #3bc2a0;
     --dark: #191818;
+    --grey: #202020;
     --light: #efefef;
     
     --gradient1: linear-gradient(to left, var(--blue) 20%, var(--green) 80%);
@@ -225,7 +239,7 @@ nav .menu a::after {
     bottom: -3px;
     width: 0%; 
     height: 2px;
-    background-color: var(--light);
+    background-image: var(--gradient1);
     transition: 0.25s ease-in-out; 
 }
 nav .menu a:hover::after {
@@ -235,7 +249,7 @@ nav .menu a:hover::after {
 
 /* HERO SECTION */
 
-#hero{
+#hero {
     display: flex;
     background-color: var(--dark);
     color: var(--light);
@@ -312,10 +326,9 @@ nav .menu a:hover::after {
     margin: 0 1vw;
     padding: 1vh 1vw;
 
-    background-color: transparent;
+    background-color: var(--grey);
     color: var(--light);
-    border-style: solid;
-    border-radius: 4px;
+    border-radius: 5px;
     transition: 0.4s ease-in-out;
 }
 
@@ -344,10 +357,10 @@ nav .menu a:hover::after {
 
 /* LANDING PAGES */
 
-#landing-pages{
+#landing-pages .reveal{
     display: flex;
     padding: 0 6vw;
-    padding-top: 15vh;
+    padding-top: 7.5vh;
 }
 #landing-pages .text, #landing-pages .features{
     width: 50vw;
@@ -539,6 +552,10 @@ nav .menu a:hover::after {
 
 
   
+
+/* FOOTER */
+
+
   
 
 
@@ -772,7 +789,7 @@ nav .menu a:hover::after {
 
     /* LANDING PAGES | RESPONSIVE */
 
-    #landing-pages{
+    #landing-pages .reveal{
         flex-direction: column;
         height: auto;
         padding: 0 auto;
