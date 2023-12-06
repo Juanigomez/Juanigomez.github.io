@@ -69,7 +69,7 @@ p{
     --blue: #39c4e7;
     --green: #3bc2a0;
     --dark: #191818;
-    --grey: #202020;
+    --grey: #222222;
     --light: #efefef;
     
     --gradient1: linear-gradient(to left, var(--blue) 20%, var(--green) 80%);
@@ -357,7 +357,7 @@ nav .menu a:hover::after {
 
 /* LANDING PAGES */
 
-#landing-pages .reveal{
+#landing-pages {
     display: flex;
     padding: 0 6vw;
     padding-top: 7.5vh;
@@ -398,9 +398,9 @@ nav .menu a:hover::after {
     margin: 2.25vh 0.85vw;
     padding: 1vh 1.25vw;
 
-    border-style: solid;
     border-radius: 4px;
     color: var(--light);
+    background-color: var(--grey);
     transition: 0.25s ease-in-out;
 }
 #landing-pages .features .feature:hover{
@@ -555,6 +555,78 @@ nav .menu a:hover::after {
 
 /* FOOTER */
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vh 4vw;
+    width: 100vw;
+    height: 45vh;
+    margin-top: 12vh;
+    color: var(--light);
+    background-color: var(--grey);
+}
+footer .top{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+
+/* Footer - logo */
+
+footer .top .logo{
+    display: flex;
+}
+footer .top .logo img{
+    width: 90px;
+    object-fit: contain;
+}
+footer .top .logo h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    transform: translateY(50px);
+}
+
+/* Footer - sections */
+
+footer .top .section h4{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+footer .top .section ul{
+    list-style: none;
+}
+footer .top .section ul li a{
+    color: var(--light);
+}
+footer .top .section ul li img{
+    width: 18px;
+    margin-right: 5px;
+}
+footer .top .section:last-child img{
+    width: 30px;
+    margin-top: 5px;
+}
+
+/* Footer - copyright */
+
+footer .bottom{
+    display: flex;
+    flex-direction: column;
+}
+footer .bottom .line{
+    width: 92vw;
+    height: 1px;
+    margin: 3vh auto;
+    background-color: var(--light);
+}
+footer .bottom .text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
   
 
@@ -582,7 +654,7 @@ nav .menu a:hover::after {
     }
     nav .burger span {
       width: 30px;
-      height: 3px;
+      height: 2px;
       display: block;
       position: absolute;
       top: 50%;
@@ -789,7 +861,7 @@ nav .menu a:hover::after {
 
     /* LANDING PAGES | RESPONSIVE */
 
-    #landing-pages .reveal{
+    #landing-pages {
         flex-direction: column;
         height: auto;
         padding: 0 auto;
