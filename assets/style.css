@@ -550,9 +550,6 @@ nav .menu a:hover::after {
 }
 
 
-
-  
-
 /* FOOTER */
 
 footer {
@@ -585,11 +582,21 @@ footer .top .logo h3{
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     font-weight: 100;
-    transform: translateY(50px);
+    transform: translateY(70px);
 }
 
 /* Footer - sections */
 
+footer .row{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    width: 30vw;
+    margin-bottom: 2.5vh;
+}
+footer .row .section:last-child{
+    margin-right: 0vw;
+}
 footer .top .section h4{
     font-size: 25px;
     margin-bottom: 5px;
@@ -600,7 +607,7 @@ footer .top .section ul{
 footer .top .section ul li a{
     color: var(--light);
 }
-footer .top .section ul li img{
+footer .top .row .section ul li img{
     width: 18px;
     margin-right: 5px;
 }
@@ -717,6 +724,43 @@ footer .bottom .text{
     
     nav .btn{
         display: none;
+    }
+
+
+    /* FOOTER | RESPONSIVE */
+
+    footer {
+        padding: 5vh 8vw;
+        width: 100vw;
+        height: 90vh;
+        margin-top: 12vh;
+    }
+    footer .top{
+        flex-direction: column;
+    }
+
+    /* Footer | Responsive - logo */
+    footer .logo{
+        margin-bottom: 2.5vh;
+    }
+    footer .top .logo img{
+        width: 75px;
+    }
+    footer .top .logo h3{
+        font-size: 35px;
+        transform: translateY(15px);
+    }
+
+    /* Footer | Responsive - sections */
+
+    footer .top .row .section:first-child{
+        margin-right: 15vw;
+    }
+
+    /* Footer - copyright */
+
+    footer .bottom .text{
+        flex-direction: column;
     }
 
 }
