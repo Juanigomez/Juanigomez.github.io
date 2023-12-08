@@ -490,6 +490,7 @@ nav .menu a:hover::after {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    margin-bottom: 24vh;
 }
 
 /* Contact Us - Form */
@@ -559,7 +560,6 @@ footer {
     padding: 5vh 4vw;
     width: 100vw;
     height: 45vh;
-    margin-top: 12vh;
     color: var(--light);
     background-color: var(--grey);
 }
@@ -759,6 +759,9 @@ footer .bottom .text{
 
     /* Footer - copyright */
 
+    footer .bottom .line{
+        width: 84vw;
+    }
     footer .bottom .text{
         flex-direction: column;
     }
